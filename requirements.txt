@@ -6,6 +6,8 @@ pymongo
 pymongo[srv]==3.12  # No need to specify version unless you have a reason
 certifi
 scikit-learn
+#dill
+pyaml
 
 
 # -e .
