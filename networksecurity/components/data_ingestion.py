@@ -1,8 +1,6 @@
 from networksecurity.exception.exception import NetworkSecurityException
 from networksecurity.logging.logger import logging
 
-
-
 ##configuration for the data ingestion config
 
 from networksecurity.entity.config_entity import DataIngestionConfig
@@ -96,7 +94,7 @@ class DataIngestion:
             dataframe = self.export_data_into_feature_store(dataframe)
             self.split_data_as_train_test(dataframe)
 
-            dataingestionartifact = DataIngestionArtifact(trained_file_path = self.data_ingestion_config.training_file_path,test_filepath = self.data_ingestion_config.testing_file_path)
+            dataingestionartifact = DataIngestionArtifact(trained_file_path = self.data_ingestion_config.training_file_path,test_file_path = self.data_ingestion_config.testing_file_path)
             print(dataingestionartifact)
             return DataIngestionArtifact
             

@@ -2,7 +2,8 @@ setuptools
 python-dotenv
 pandas
 numpy
-pymongo[srv]  # No need to specify version unless you have a reason
+pymongo
+pymongo[srv]==3.12  # No need to specify version unless you have a reason
 certifi
 scikit-learn
 
