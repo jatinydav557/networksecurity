@@ -1,0 +1,12 @@
+[ 2025-06-06 11:59:24,724 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-06-06 11:59:24,739 ] 107 dagshub - INFO - Accessing as jatinydav557
+[ 2025-06-06 11:59:25,600 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/jatinydav557/networksecurity "HTTP/1.1 200 OK"
+[ 2025-06-06 11:59:26,520 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-06-06 11:59:26,520 ] 107 dagshub - INFO - Initialized MLflow to track repo "jatinydav557/networksecurity"
+[ 2025-06-06 11:59:26,520 ] 107 dagshub - INFO - Repository jatinydav557/networksecurity initialized!
+[ 2025-06-06 12:02:11,821 ] 34 root - INFO - Start data ingestion
+[ 2025-06-06 12:02:16,862 ] 65 root - INFO - Performed train test split on the dataframe
+[ 2025-06-06 12:02:16,862 ] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-06-06 12:02:16,863 ] 75 root - INFO - Exporting train and test file path.
+[ 2025-06-06 12:02:16,997 ] 84 root - INFO - Exported train and test file path.
+[ 2025-06-06 12:02:16,999 ] 37 root - INFO - Data ingestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\06_06_2025_11_59_19\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\06_06_2025_11_59_19\\data_ingestion\\ingested\\test.csv')
