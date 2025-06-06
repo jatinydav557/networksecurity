@@ -58,8 +58,8 @@ async def train_route():
         train_pipeline.run_pipeline()
         return Response("Training is successful")
     except Exception as e:
-            _,_,exc_tb = sys.exc_info()
-            raise  NetworkSecurityException(e,exc_tb)
+                _, _, exc_tb = sys.exc_info()
+                raise NetworkSecurityException(e, exc_tb)
     
 @app.post("/predict")
 async def predict_route(request: Request,file: UploadFile = File(...)):
@@ -76,14 +76,16 @@ async def predict_route(request: Request,file: UploadFile = File(...)):
         print(df['predicted_column'])
         #df['predicted_column'].replace(-1, 0)
         #return df.to_json()
+        # Create directory if it doesn't exist
+        os.makedirs('prediction_output', exist_ok=True)
         df.to_csv('prediction_output/output.csv')
         table_html = df.to_html(classes='table table-striped')
         #print(table_html)
         return templates.TemplateResponse("table.html", {"request": request, "table": table_html})
         
     except Exception as e:
-            _,_,exc_tb = sys.exc_info()
-            raise  NetworkSecurityException(e,exc_tb)
+                _, _, exc_tb = sys.exc_info()
+                raise NetworkSecurityException(e, exc_tb)
 
     
 if __name__=="__main__":
