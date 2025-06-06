@@ -1,8 +1,21 @@
-FROM python:3.10-slim-buster
+# Use a valid and existing image tag for Python 3.12
+FROM python:3.12-slim-bookworm
+
+# Set the working directory inside the container
 WORKDIR /app
-COPY . /app
 
-RUN apt update -y && apt install awscli -y
+# Copy the file that lists your dependencies
+COPY requirements.txt .
 
-RUN apt-get update && pip install -r requirements.txt
-CMD ["python3", "app.py"]
+# Install the dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of your application code
+COPY . .
+
+# Tell Cloud Run which port the application will listen on
+EXPOSE 8080
+
+# The command to run your app using a production server (Gunicorn)
+# This "shell form" of CMD allows the $PORT variable to be correctly interpreted.
+CMD gunicorn -w 2 -k uvicorn.workers.UvicornWorker --bind "0.0.0.0:$PORT" app:app

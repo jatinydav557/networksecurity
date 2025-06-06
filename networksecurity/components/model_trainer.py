@@ -25,16 +25,14 @@ from sklearn.ensemble import (
 )
 
 import mlflow
-
-
 import dagshub
-dagshub.init(repo_owner='jatinydav557', repo_name='networksecurity', mlflow=True)
 
 class ModelTrainer:
     def __init__(self,model_trainer_config:ModelTrainerConfig,data_transformation_artifact:DataTransformationArtifact):
         try:
             self.model_trainer_config=model_trainer_config
             self.data_transformation_artifact=data_transformation_artifact
+            dagshub.init(repo_owner='jatinydav557', repo_name='networksecurity', mlflow=True)
         except Exception as e:
             _,_,exc_tb = sys.exc_info()
             raise  NetworkSecurityException(e,exc_tb)
