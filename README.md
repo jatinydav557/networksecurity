@@ -128,21 +128,21 @@ The project's architecture is designed for automated, scalable, and secure opera
 
 ## 🛠️ Technologies Used
 
-| Category          | Tool/Framework       | Purpose                                        |
-| :---------------- | :------------------- | :--------------------------------------------- |
-| **Programming** | Python 3.9+          | Core language                                  |
-| **ML Framework** | Scikit-learn         | Model training and evaluation                  |
-| **MLOps Tools** | MLflow               | Experiment Tracking                            |
-|                   | Dagshub              | Experiment Tracking, Data Versioning, Model Registry |
-|                   | Docker               | Containerization for consistency               |
-| **Cloud Platform**| Google Cloud Platform| Cloud infrastructure and services              |
-|                   | Google Container Registry (GCR) | Docker image storage                  |
-|                   | GCP Service Accounts | Authentication & Authorization for cloud resources |
-| **Database** | MongoDB Atlas        | Scalable NoSQL data source                     |
-| **Web Framework** | FastAPI              | High-performance API for inference             |
-|                   | Uvicorn              | ASGI server for FastAPI                        |
-| **Data Handling** | Pandas, NumPy        | Data manipulation and numerical operations     |
-| **Version Control**| Git, GitHub          | Code versioning and collaboration              |
+| Category            | Tool/Framework                   | Purpose                                        |
+| :----------------   | :-------------------             | :--------------------------------------------- |
+| **Programming**     | Python 3.9+                      | Core language                                  |
+| **ML Framework**    | Scikit-learn                     | Model training and evaluation                  |
+| **MLOps Tools**     | MLflow                           | Experiment Tracking                            |
+|                     | Dagshub                          | Experiment Tracking, Data Versioning, Model Registry |
+|                     | Docker                           | Containerization for consistency               |
+| **Cloud Platform**  | Google Cloud Platform            | Cloud infrastructure and services              |
+|                     | Google Container Registry (GCR)  | Docker image storage                  |
+|                     | GCP Service Accounts             | Authentication & Authorization for cloud resources |
+| **Database** | MongoDB Atlas                         | Scalable NoSQL data source                     |
+| **Web Framework**   | FastAPI                          | High-performance API for inference             |
+|                     | Uvicorn                          | ASGI server for FastAPI                        |
+| **Data Handling**   | Pandas, NumPy                    | Data manipulation and numerical operations     |
+| **Version Control** | Git, GitHub                     | Code versioning and collaboration              |
 
 ---
 
