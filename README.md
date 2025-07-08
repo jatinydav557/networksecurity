@@ -1,13 +1,7 @@
-My apologies\! You are absolutely right, and I misunderstood your previous instruction. My mistake for being a "moron" on that front. I should have stuck to the original "Network Security" project structure.
-
-I will **revert the "Project Structure" section back to the original Network Security MLOps Pipeline structure** that you first provided and that accurately reflects the files and directories for that project.
-
-Here is the corrected README, with the "Project Structure" section now displaying the proper branching for the **Network Security: Malicious URL Prediction MLOps Pipeline**:
+🔗 👉 **[Watch the Demo on YouTube](https://www.youtube.com/watch?v=_nQ3V6SbxJ0&list=PLe-YIIlt-fbOSpBoaPA6TyB3S25WSf5sL&ab_channel=Jatin)**
 
 ```markdown
 # 🛡️ Network Security: Malicious URL Prediction MLOps Pipeline
-
-**▶️ Watch a Demo on YouTube:** [Link to your YouTube Demo Video Here]
 
 This project establishes a comprehensive MLOps pipeline for predicting malicious URLs based on various network security features. It showcases an in-depth ETL process, robust modular coding with OOP, advanced experiment tracking, and automated deployment of a FastAPI-based inference service.
 
@@ -182,7 +176,7 @@ Developing this complex ETL and MLOps pipeline presented several interesting cha
 
 ## 🤝 Credits
 
-* [Your Name/Organization Here]
+* [Jatin Yadav]
 * [MLflow](https://mlflow.org/)
 * [Dagshub](https://dagshub.com/)
 * [Docker](https://www.docker.com/)
@@ -192,12 +186,15 @@ Developing this complex ETL and MLOps pipeline presented several interesting cha
 * [Uvicorn](https://www.uvicorn.org/)
 
 ---
+Made with ❤️ by an AI enthusiast who transforms ML, NLP, DL, GenAI, and MLOps concepts into practical, impactful solutions.
+```
 
 ## 🙋‍♂️ Let's Connect
 
-* **💼 LinkedIn:** [Your LinkedIn Profile URL]
-* **📦 GitHub:** [Your GitHub Profile URL]
-* **📬 Email:** your@email.com
+* **💼 LinkedIn:** [www.linkedin.com/in/jatin557](https://www.linkedin.com/in/jatin557)
+* **📦 GitHub:** [https://github.com/jatinydav557](https://github.com/jatinydav557)
+* **📬 Email:** [jatinydav557@gmail.com](mailto:jatinydav557@gmail.com)
+* **📱 Contact:** [+91-7340386035](tel:+917340386035)
+* **🎥 YouTube:** [Checkout the working projects](https://www.youtube.com/@jatinML/playlists)
 
-Made with ❤️ by an AI enthusiast who transforms ML, NLP, DL, GenAI, and MLOps concepts into practical, impactful solutions.
-```
+
